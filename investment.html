@@ -2,139 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Essential Financial Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Investments — Essential Financial Solutions</title>
+  <meta name="description" content="Explore Essential Financial Solutions investments: Edu Investment, Short Term Investment, and Eyethu Private Investment — built for growth, stability, and legacy."/>
+  <link rel="icon" href="assets/images/icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <style>
-    /* Reset & Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1f2937; }
+    .brand-navy { background-color: #0D1B2A; }
+    .brand-red { color: #C1272D; }
+    .btn-primary {
+      background-color: #C1272D; color: #fff; transition: all .25s ease;
     }
-    body {
-      background-color: #ffffff;
-      color: #333;
-      line-height: 1.6;
+    .btn-primary:hover { background-color: #a32025; }
+    .glassy {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.3);
     }
-
-    /* Header */
-    header {
-      background: url('header.png') center/cover no-repeat;
-      padding: 20px 0;
-      position: relative;
+    .section-card {
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
     }
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(255,255,255,0.3);
-      backdrop-filter: blur(6px);
-      z-index: 0;
-    }
-    .header-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      color: #fff;
-    }
-    .header-content h1 {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #d72638; /* Bright red only here for brand name */
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: #ffffff;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Sections */
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      color: #0b1e36; /* Dark navy */
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-    }
-    p {
-      margin-bottom: 15px;
-      font-size: 1rem;
-    }
-
-    /* Edu Investment priority styling */
-    .edu-investment {
-      background: #f7f9fc;
-      border-left: 6px solid #0b1e36;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .edu-investment h2 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #0b1e36;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-    }
+    .section-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+    .lead { font-size: 1.125rem; line-height: 1.7; color: #4b5563; }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="header-content">
-      <h1>Essential Financial Solutions</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#edu-investment">Edu Investment</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <!-- Header / Nav -->
+  <header class="relative w-full brand-navy text-white">
+    <div class="absolute inset-0">
+      <img src="assets/images/background-hero.jpg" alt="Investment background" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <nav class="relative z-10 max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="EFS logo" class="w-10 h-10 object-contain">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold brand-red">Essential Financial Solutions</a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html#services" class="hover:text-gray-200">Services</a>
+        <a href="investment.html" class="hover:text-gray-200 underline underline-offset-4">Investments</a>
+        <a href="index.html#about" class="hover:text-gray-200">About</a>
+        <a href="index.html#contact" class="hover:text-gray-200">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 pt-10 pb-20 text-center">
+      <div class="glassy mx-auto p-8 md:p-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Invest With Confidence</h1>
+        <p class="lead mb-8">
+          From building a legacy for your child’s education to optimizing short-term returns and unlocking private opportunities—our investment solutions are designed for real-life goals.
+        </p>
+        <a href="#edu" class="btn-primary inline-block px-8 py-4 rounded-lg shadow">Explore Edu Investment First</a>
+      </div>
     </div>
   </header>
 
-  <section id="edu-investment" class="edu-investment">
-    <h2>Edu Investment</h2>
-    <p>
-      At Essential Financial Solutions, we believe education is the foundation of a secure financial future.
-      Our Edu Investment plans are designed to help you save for tuition, resources, and future opportunities 
-      with maximum returns and flexible terms.
-    </p>
-    <p>
-      Whether you're planning for your child's education or your own skill development, our tailored 
-      investment solutions ensure you have the financial security to achieve your learning goals.
-    </p>
+  <!-- Edu Investment (Priority) -->
+  <section id="edu" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-10 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Edu Investment</h2>
+      <p class="mt-3 lead">Prioritizing education to elevate our standard of living and build generational success.</p>
+    </div>
+
+    <!-- Block 1 -->
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2">
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-[#0D1B2A]">
+          Build not only wealth for your child, but also build a reputation for your bundle of joy
+        </h3>
+        <p class="lead">
+          Edu Investment is crafted to create opportunity, credibility, and stability. Position your child for success from the start with a fund that grows alongside their potential.
+        </p>
+      </div>
+      <div class="min-h-[260px]">
+        <img src="assets/images/edu-investmet-card.jpg" alt="Edu Investment" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2 mt-10">
+      <div class="min-h-[260px] order-1 lg:order-none">
+        <img src="assets/images/clock-2696234_1280.jpg" alt="Invest in your child's future" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold mb-2">
+          <span class="brand-red font-extrabold">INVEST IN YOUR CHILD'S FUTURE</span>
+        </h3>
+        <p class="lead">
+          Create a legacy for your child by forming a partnership with Essential Financial Solutions under Edu Investment. Together, we build a pathway that funds dreams and opens doors.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2 mt-10">
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <p class="lead mb-4">
+          Breaking our social status that help us to elevate to our standard of living is prioritizing education.
+        </p>
+        <h4 class="text-xl md:text-2xl font-bold text-[#0D1B2A]">
+          “Mandela once said education is the key to success”
+        </h4>
+      </div>
+      <div class="min-h-[260px]">
+        <img src="assets/images/mandela.jpg" alt="Nelson Mandela" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Benefits -->
+    <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="section-card">
+        <img src="assets/images/financial-consulting.jpg" alt="Education funding" class="w-full h-56 object-cover">
+        <div class="p-8">
+          <h5 class="text-2xl font-bold text-[#0D1B2A] mb-3">Edu Investment Benefits</h5>
+          <ul class="space-y-3 text-gray-700">
+            <li>• We cover a total amount of education fees on a tertiary level that is up to <strong>R2,5 million</strong>.</li>
+            <li>• <strong>Application fees</strong> that are needed at the faculty of your child's choice.</li>
+            <li>• <strong>Health is wealth</strong> — partnered with gym companies to keep your child healthy and fit.</li>
+            <li>• <strong>Registration fees</strong> at the university of your choice.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <img src="assets/images/get-in-touch.jpg" alt="Get in touch" class="w-full h-56 object-cover">
+        <div class="p-8">
+          <h5 class="text-2xl font-bold text-[#0D1B2A] mb-3">Ready to Start?</h5>
+          <p class="lead mb-6">Speak to our consultants to tailor an Edu Investment plan that matches your child’s ambitions.</p>
+          <a href="index.html#contact" class="btn-primary inline-block px-6 py-3 rounded-lg shadow">Talk to Us</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <p>We offer a wide range of financial services including investment planning, retirement savings, and wealth management.</p>
+  <!-- Short Term Investment -->
+  <section id="short-term" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Short Term Investment</h2>
+      <p class="mt-3 lead">Flexible, time-bound investments designed to meet near-term goals without compromising discipline.</p>
+    </div>
+
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2">
+      <div class="min-h-[260px]">
+        <img src="assets/images/hourglass-1703349_1280.jpg" alt="Short term horizons" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 md:p-10">
+        <h3 class="text-2xl md:text-3xl font-bold text-[#0D1B2A] mb-4">Agility with Structure</h3>
+        <p class="lead mb-4">
+          Ideal for saving toward a deposit, funding a project, or building an emergency buffer. We balance risk and return using diversified instruments to optimize outcomes across short horizons.
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Defined terms with transparent targets</li>
+          <li>• Liquidity options that protect your plans</li>
+          <li>• Portfolio rebalancing to manage volatility</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@essentialfinancialsolutions.com</p>
-    <p>Phone: +27 123 456 789</p>
+  <!-- Eyethu Private Investment -->
+  <section id="eyethu" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Eyethu Private Investment</h2>
+      <p class="mt-3 lead">Tailored private opportunities aimed at long-term wealth creation and intergenerational legacy.</p>
+    </div>
+
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2">
+      <div class="p-8 md:p-10">
+        <h3 class="text-2xl md:text-3xl font-bold text-[#0D1B2A] mb-4">Exclusive. Strategic. Long-Term.</h3>
+        <p class="lead mb-4">
+          Access curated private vehicles and structured products aligned to sophisticated investor profiles. We emphasize due diligence, risk governance, and measured growth.
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Bespoke mandates and allocations</li>
+          <li>• Rigorous research and oversight</li>
+          <li>• Designed for compounding and capital preservation</li>
+        </ul>
+      </div>
+      <div class="min-h-[260px]">
+        <img src="assets/images/eyethu-private-investment-card.jpg" alt="Eyethu Private Investment" class="w-full h-full object-cover">
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Essential Financial Solutions. All Rights Reserved.</p>
+  <!-- CTA -->
+  <section class="max-w-7xl mx-auto px-6 pb-16">
+    <div class="section-card grid grid-cols-1 md:grid-cols-2">
+      <div class="min-h-[240px]">
+        <img src="assets/images/financial-consulting.jpg" alt="Consult our team" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-[#0D1B2A] mb-3">Let’s Build Your Investment Plan</h3>
+        <p class="lead mb-6">Our advisors will help align your risk profile, timelines, and goals across Edu, Short Term, and Eyethu investments.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="index.html#contact" class="btn-primary px-6 py-3 rounded-lg shadow">Get in Touch</a>
+          <a href="index.html" class="px-6 py-3 rounded-lg border border-gray-300 hover:bg-gray-50">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="brand-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon.png" alt="EFS icon" class="w-8 h-8">
+          <span class="font-bold">Essential Financial Solutions</span>
+        </div>
+        <p class="text-sm text-gray-300 mt-3">Secure futures. Build legacies. Grow with confidence.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Investments</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#edu" class="hover:text-white">Edu Investment</a></li>
+          <li><a href="#short-term" class="hover:text-white">Short Term Investment</a></li>
+          <li><a href="#eyethu" class="hover:text-white">Eyethu Private Investment</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Connect</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+          <li><a href="index.html#services" class="hover:text-white">All Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <p class="text-center text-sm text-gray-300 py-4">© 2025 Essential Financial Solutions. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
