@@ -29,11 +29,198 @@
       background-color: #fff;
       border: 1px solid #e5e7eb;
       transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
     }
     .service-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header class="relative w-full bg-[#0D1B2A] text-white">
+    <div class="absolute inset-0">
+      <img src="assets/images/header.png" alt="Header Background" class="w-full h-full object-cover"/>
+    </div>
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+    <nav class="relative z-10 flex justify-between items-center px-8 py-6">
+      <a href="#" class="text-2xl font-bold text-[#C1272D]">Essential Financial Solutions</a>
+      <div class="space-x-6">
+        <a href="#services" class="hover:text-[#C1272D] font-medium">Services</a>
+        <a href="#about" class="hover:text-[#C1272D] font-medium">About</a>
+        <a href="#contact" class="hover:text-[#C1272D] font-medium">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative z-10 flex flex-col items-center justify-center text-center py-32 px-4">
+      <div class="glassy max-w-2xl">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Empowering Your Future</h1>
+        <p class="text-lg md:text-xl mb-6">
+          Trusted financial solutions in Insurance, Investments, Legal Services, and Health — with a strong focus on education for a brighter tomorrow.
+        </p>
+        <a href="#contact" class="btn-primary font-semibold px-8 py-4 rounded-lg shadow-lg">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-8 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-[#0D1B2A]">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Edu Investment - prioritized -->
+      <div class="service-card rounded-xl border-t-4 border-[#C1272D]">
+        <img src="assets/images/edu-investmet-card.jpg" alt="Edu Investment">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Edu Investment <span class="text-[#C1272D] font-bold">(Top Priority)</span></h3>
+          <p class="text-gray-600">Secure your child's future with our comprehensive education-focused investment plans that ensure growth and stability for years to come.</p>
+        </div>
+      </div>
+
+      <!-- Short Term Investment -->
+      <div class="service-card rounded-xl">
+        <img src="assets/images/hourglass-1703349_1280.jpg" alt="Short Term Investment">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Short Term Investment</h3>
+          <p class="text-gray-600">Flexible investment plans for short-term financial goals with competitive returns.</p>
+        </div>
+      </div>
+
+      <!-- Eyethu Private Investment -->
+      <div class="service-card rounded-xl">
+        <img src="assets/images/eyethu-private-investment-card.jpg" alt="Eyethu Private Investment">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Eyethu Private Investment</h3>
+          <p class="text-gray-600">Exclusive private investment opportunities tailored for long-term wealth growth.</p>
+        </div>
+      </div>
+
+      <!-- Funeral Cover -->
+      <div class="service-card rounded-xl">
+        <img src="assets/images/funeral-cover-card.jpg" alt="Funeral Cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Funeral Cover</h3>
+          <p class="text-gray-600">Affordable and reliable funeral coverage to protect your loved ones during difficult times.</p>
+        </div>
+      </div>
+
+      <!-- Premium Funeral Cover -->
+      <div class="service-card rounded-xl">
+        <img src="assets/images/premium-funeral-card.jpg" alt="Premium Funeral Cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Premium Funeral Cover</h3>
+          <p class="text-gray-600">Premium benefits and coverage for complete peace of mind.</p>
+        </div>
+      </div>
+
+      <!-- Legal Services -->
+      <div class="service-card rounded-xl">
+        <img src="assets/images/legal-services-card.jpg" alt="Legal Services">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Legal Services</h3>
+          <p class="text-gray-600">Expert legal advice and representation to safeguard your rights and interests.</p>
+        </div>
+      </div>
+
+      <!-- Health -->
+      <div class="service-card rounded-xl">
+        <img src="assets/images/health-card.jpg" alt="Health Services">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Health</h3>
+          <p class="text-gray-600">Comprehensive health solutions to protect your well-being and that of your family.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-8 bg-gray-50">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <div class="md:w-1/2">
+        <img src="assets/images/financial-consulting.jpg" alt="Financial consulting" class="rounded-xl shadow-lg"/>
+      </div>
+      <div class="md:w-1/2 space-y-6">
+        <h2 class="text-3xl font-bold text-[#0D1B2A]">About Essential Financial Solutions</h2>
+        <p class="text-gray-600 text-lg">
+          We are dedicated to providing trusted and personalized financial services. Our priority is to help clients achieve their goals — with Edu Investment at the forefront of our mission, alongside our insurance, legal, and health services.
+        </p>
+        <a href="#contact" class="btn-primary inline-block px-6 py-3 rounded-lg shadow">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-8 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-[#0D1B2A]">Get In Touch</h2>
+    <form onsubmit="sendToWhatsApp(event)" class="bg-white shadow-lg rounded-xl p-8 space-y-6 border border-gray-200">
+      <div>
+        <label class="block mb-2 font-semibold">Name</label>
+        <input type="text" id="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" placeholder="Your Name" required/>
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold">Email</label>
+        <input type="email" id="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" placeholder="Your Email" required/>
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold">Phone Number</label>
+        <input type="tel" id="phone" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" placeholder="Your Phone Number" required/>
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold">Subject</label>
+        <select id="subject" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" required>
+          <option value="">Select a service</option>
+          <option value="Edu Investment">Edu Investment</option>
+          <option value="Short Term Investment">Short Term Investment</option>
+          <option value="Eyethu Private Investment">Eyethu Private Investment</option>
+          <option value="Funeral Cover">Funeral Cover</option>
+          <option value="Premium Funeral Cover">Premium Funeral Cover</option>
+          <option value="Legal Services">Legal Services</option>
+          <option value="Health">Health</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-2 font-semibold">Message</label>
+        <textarea id="message" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary w-full font-semibold px-6 py-3 rounded-lg shadow">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0D1B2A] text-white py-6">
+    <div class="max-w-7xl mx-auto text-center">
+      &copy; 2025 Essential Financial Solutions. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      const whatsappNumber = '27732067477'; // Without '+' and spaces
+      const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${subject}\nMessage: ${message}`
+      )}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
   </style>
 </head>
 <body class="text-gray-800">
