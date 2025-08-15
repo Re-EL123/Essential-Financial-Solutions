@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essential Financial Solutions</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: url('header.png') center/cover no-repeat;
+      padding: 20px 0;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(6px);
+      z-index: 0;
+    }
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+    }
+    .header-content h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #d72638; /* Bright red only here for brand name */
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0b1e36; /* Dark navy */
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    /* Edu Investment priority styling */
+    .edu-investment {
+      background: #f7f9fc;
+      border-left: 6px solid #0b1e36;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .edu-investment h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0b1e36;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <h1>Essential Financial Solutions</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#edu-investment">Edu Investment</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="edu-investment" class="edu-investment">
+    <h2>Edu Investment</h2>
+    <p>
+      At Essential Financial Solutions, we believe education is the foundation of a secure financial future.
+      Our Edu Investment plans are designed to help you save for tuition, resources, and future opportunities 
+      with maximum returns and flexible terms.
+    </p>
+    <p>
+      Whether you're planning for your child's education or your own skill development, our tailored 
+      investment solutions ensure you have the financial security to achieve your learning goals.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of financial services including investment planning, retirement savings, and wealth management.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@essentialfinancialsolutions.com</p>
+    <p>Phone: +27 123 456 789</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Essential Financial Solutions. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
