@@ -1,143 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Essential Financial Solutions - Insurance</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Insurance — Essential Financial Solutions</title>
+  <meta name="description" content="Explore Essential Financial Solutions insurance: affordable funeral cover and premium funeral cover — peace of mind for you and your family."/>
+  <link rel="icon" href="assets/images/icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #0D1B2A;
-      color: #f5f5f5;
-      line-height: 1.6;
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1f2937; }
+    .brand-navy { background-color: #0D1B2A; }
+    .brand-red { color: #C1272D; }
+    .btn-primary {
+      background-color: #C1272D; color: #fff; transition: all .25s ease;
     }
-    header {
-      background: #C1272D;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
+    .btn-primary:hover { background-color: #a32025; }
+    .glassy {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.3);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .section-card {
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
     }
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h2 {
-      color: #C1272D;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 10px auto;
-    }
-    .highlight {
-      color: #7F3FBF;
-      font-weight: bold;
-    }
-    .price {
-      font-size: 1.5rem;
-      color: #C1272D;
-      font-weight: bold;
-      margin: 15px 0;
-    }
-    img {
-      margin: 20px auto;
-      display: block;
-      border-radius: 12px;
-      max-width: 100%;
-      height: auto;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    .plan {
-      background: #13273D;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 12px;
-      max-width: 900px;
-      text-align: left;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    }
-    .plan h3 {
-      color: #C1272D;
-      margin-bottom: 10px;
-    }
-    ul {
-      text-align: left;
-      max-width: 700px;
-      margin: 20px auto;
-    }
-    ul li {
-      margin: 10px 0;
-      font-size: 1rem;
-    }
-    footer {
-      background: #0D1B2A;
-      text-align: center;
-      padding: 20px;
-      border-top: 2px solid #C1272D;
-      margin-top: 40px;
-    }
-    footer p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
+    .section-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+    .lead { font-size: 1.125rem; line-height: 1.7; color: #4b5563; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Essential Financial Solutions - Insurance Plans</h1>
-    <p>Funeral Cover & Premium Funeral Cover</p>
+  <!-- Header / Nav -->
+  <header class="relative w-full brand-navy text-white">
+    <div class="absolute inset-0">
+      <img src="assets/images/background-hero.jpg" alt="Insurance background" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <nav class="relative z-10 max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="EFS logo" class="w-10 h-10 object-contain">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold brand-red">Essential Financial Solutions</a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html#services" class="hover:text-gray-200">Services</a>
+        <a href="investment.html" class="hover:text-gray-200">Investments</a>
+        <a href="insurance.html" class="hover:text-gray-200 underline underline-offset-4">Insurance</a>
+        <a href="index.html#about" class="hover:text-gray-200">About</a>
+        <a href="index.html#contact" class="hover:text-gray-200">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 pt-10 pb-20 text-center">
+      <div class="glassy mx-auto p-8 md:p-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Insurance That Cares</h1>
+        <p class="lead mb-8">
+          Protect yourself and your loved ones with our comprehensive funeral cover solutions — designed to give peace of mind during life’s most challenging moments.
+        </p>
+        <a href="#funeral" class="btn-primary inline-block px-8 py-4 rounded-lg shadow">Explore Funeral Cover</a>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>Peace of Mind When You Need It Most</h2>
-    <p>
-      Essential Financial Solutions has created a <span class="highlight">funeral cover</span> that ensures you and your family are taken care of 
-      during life’s most difficult times. Our plans are designed to provide <strong>financial support</strong> so that 
-      you can focus on healing instead of worrying about expenses.
-    </p>
-    <p><em>With our funeral cover plan, you can gain peace of mind during life's most challenging moments.</em></p>
-    <div class="price">From only R62 per month</div>
-    <img src="assets/funeral_cover.jpg" alt="Funeral Cover">
+  <!-- Funeral Cover -->
+  <section id="funeral" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-10 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Funeral Cover</h2>
+      <p class="mt-3 lead">Essential Financial Solutions has created a funeral cover that supports your family when they need it most.</p>
+    </div>
+
+    <!-- Block 1 -->
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2">
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-[#0D1B2A]">
+          Peace of Mind During Life’s Most Challenging Moments
+        </h3>
+        <p class="lead">
+          With our funeral cover plan, you can rest assured that financial burdens will not add to emotional ones. Support your loved ones with dignity and care.
+        </p>
+        <p class="mt-4 font-semibold brand-red">From as little as R62 per month.</p>
+      </div>
+      <div class="min-h-[260px]">
+        <img src="assets/images/funeral-cover.jpg" alt="Funeral Cover" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Premium Funeral Cover -->
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2 mt-10">
+      <div class="min-h-[260px] order-1 lg:order-none">
+        <img src="assets/images/premium-funeral.jpg" alt="Premium Funeral Cover" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold mb-2">
+          Premium Funeral Cover
+        </h3>
+        <p class="lead mb-4">
+          For families who want extended benefits and higher payouts, our Premium Funeral Cover offers enhanced protection to ensure financial security and peace of mind.
+        </p>
+        <ul class="space-y-2 text-gray-700">
+          <li>• Extended cover for the entire family</li>
+          <li>• Flexible plans tailored to your needs</li>
+          <li>• Fast and reliable payouts during the grieving period</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section class="plan">
-    <h3>💠 Funeral Cover Plan</h3>
-    <p>
-      Our basic funeral cover plan is affordable and designed for anyone who wants reliable support at a low cost. 
-    </p>
-    <ul>
-      <li>Affordable cover starting at <strong>R62 per month</strong></li>
-      <li>Pays out quickly to help cover immediate expenses</li>
-      <li>Ensures your loved ones are financially supported</li>
-      <li>Flexible options for individuals and families</li>
-    </ul>
+  <!-- CTA -->
+  <section class="max-w-7xl mx-auto px-6 pb-16">
+    <div class="section-card grid grid-cols-1 md:grid-cols-2">
+      <div class="min-h-[240px]">
+        <img src="assets/images/support-family.jpg" alt="Support your family" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-[#0D1B2A] mb-3">Secure Your Family’s Tomorrow</h3>
+        <p class="lead mb-6">Get started with our affordable funeral cover plans today and ensure your family is protected when they need it most.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="index.html#contact" class="btn-primary px-6 py-3 rounded-lg shadow">Apply Now</a>
+          <a href="index.html" class="px-6 py-3 rounded-lg border border-gray-300 hover:bg-gray-50">Back to Home</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="plan">
-    <h3>🌟 Premium Funeral Cover</h3>
-    <p>
-      For those who want enhanced benefits and extra protection, our <span class="highlight">Premium Funeral Cover</span> is the ideal solution.
-    </p>
-    <ul>
-      <li>Higher payout benefits for families</li>
-      <li>Includes extended family members under one plan</li>
-      <li>Additional financial assistance during the grieving period</li>
-      <li>Extra benefits such as counselling and support services</li>
-    </ul>
-    <img src="assets/premium_funeral_cover.jpg" alt="Premium Funeral Cover">
-  </section>
-
-  <footer>
-    <p>© 2025 Essential Financial Solutions. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer class="brand-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon.png" alt="EFS icon" class="w-8 h-8">
+          <span class="font-bold">Essential Financial Solutions</span>
+        </div>
+        <p class="text-sm text-gray-300 mt-3">Secure futures. Build legacies. Grow with confidence.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Insurance</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#funeral" class="hover:text-white">Funeral Cover</a></li>
+          <li><a href="#funeral" class="hover:text-white">Premium Funeral Cover</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Connect</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+          <li><a href="index.html#services" class="hover:text-white">All Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <p class="text-center text-sm text-gray-300 py-4">© 2025 Essential Financial Solutions. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
