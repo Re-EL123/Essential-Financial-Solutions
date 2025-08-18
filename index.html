@@ -4,85 +4,84 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Essential Financial Solutions</title>
+  <meta name="description" content="Essential Financial Solutions provides trusted financial services including Edu Investment, Short Term Investment, Eyethu Private Investment, Insurance, Legal, and Health services."/>
+  <link rel="icon" href="assets/images/icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #fff; }
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1f2937; }
+    .brand-navy { background-color: #0D1B2A; }
+    .brand-red { color: #C1272D; }
+    .btn-primary {
+      background-color: #C1272D; color: #fff; transition: all .25s ease;
+    }
+    .btn-primary:hover { background-color: #a32025; }
     .glassy {
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      border-radius: 10px;
-      padding: 2rem;
-    }
-    .btn-primary {
-      background-color: #C1272D;
-      color: #fff;
-      transition: all 0.3s ease;
-    }
-    .btn-primary:hover {
-      background-color: #a32025;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.3);
     }
     .service-card {
-      background-color: #fff;
-      border: 1px solid #e5e7eb;
-      transition: all 0.3s ease;
-      overflow: hidden;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
     }
-    .service-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+    .lead { font-size: 1.125rem; line-height: 1.7; color: #4b5563; }
   </style>
 </head>
-<body class="text-gray-800">
+<body>
 
   <!-- Header / Navbar -->
-  <header class="relative w-full bg-[#0D1B2A] text-white">
+  <header class="relative w-full brand-navy text-white">
     <div class="absolute inset-0">
-      <img src="assets/images/background-hero.jpg" alt="Header Background" class="w-full h-full object-cover"/>
+      <img src="assets/images/background-hero.jpg" alt="Header Background" class="w-full h-full object-cover">
     </div>
-    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
 
-    <nav class="relative z-10 flex justify-between items-center px-8 py-6">
-      <a href="#" class="text-2xl font-bold text-[#C1272D]">Essential Financial Solutions</a>
-      <div class="space-x-6">
-        <a href="#services" class="hover:text-[#C1272D] font-medium">Services</a>
-        <a href="#about" class="hover:text-[#C1272D] font-medium">About</a>
-        <a href="#contact" class="hover:text-[#C1272D] font-medium">Contact</a>
+    <nav class="relative z-10 max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="EFS logo" class="w-10 h-10 object-contain">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold brand-red">Essential Financial Solutions</a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="hover:text-gray-200">Services</a>
+        <a href="investment.html" class="hover:text-gray-200">Investments</a>
+        <a href="#about" class="hover:text-gray-200">About</a>
+        <a href="#contact" class="hover:text-gray-200">Contact</a>
       </div>
     </nav>
 
     <!-- Hero -->
-    <div class="relative z-10 flex flex-col items-center justify-center text-center py-32 px-4">
-      <div class="glassy max-w-2xl">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Empowering Your Future</h1>
-        <p class="text-lg md:text-xl mb-6">
+    <div class="relative z-10 max-w-5xl mx-auto px-6 pt-20 pb-32 text-center">
+      <div class="glassy mx-auto p-8 md:p-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Empowering Your Future</h1>
+        <p class="lead mb-8">
           Trusted financial solutions in Insurance, Investments, Legal Services, and Health — with a strong focus on education for a brighter tomorrow.
         </p>
-        <a href="#contact" class="btn-primary font-semibold px-8 py-4 rounded-lg shadow-lg">Get Started</a>
+        <a href="#contact" class="btn-primary inline-block px-8 py-4 rounded-lg shadow">Get Started</a>
       </div>
     </div>
   </header>
 
   <!-- Services -->
-  <section id="services" class="py-20 px-8 max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12 text-[#0D1B2A]">Our Services</h2>
+  <section id="services" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-10 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Our Services</h2>
+      <p class="mt-3 lead">Comprehensive solutions to help you secure your future and build lasting legacies.</p>
+    </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       
-      <!-- Edu Investment - prioritized -->
+      <!-- Edu Investment -->
       <div class="service-card rounded-xl border-t-4 border-[#C1272D]">
         <img src="assets/images/edu-investmet-card.jpg" alt="Edu Investment">
         <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Edu Investment </h3><!--<span class="text-[#C1272D] font-bold">(Top Priority)</span></h3>-->
-          <p class="text-gray-600">Secure your child's future with our comprehensive education-focused investment plans that ensure growth and stability for years to come.</p>
+          <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Edu Investment</h3>
+          <p class="text-gray-700">Secure your child's future with education-focused investment plans that ensure growth and stability.</p>
         </div>
       </div>
 
@@ -91,7 +90,7 @@
         <img src="assets/images/hourglass-1703349_1280.jpg" alt="Short Term Investment">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Short Term Investment</h3>
-          <p class="text-gray-600">Flexible investment plans for short-term financial goals with competitive returns.</p>
+          <p class="text-gray-700">Flexible plans for near-term financial goals with competitive returns.</p>
         </div>
       </div>
 
@@ -100,7 +99,7 @@
         <img src="assets/images/eyethu-private-investment-card.jpg" alt="Eyethu Private Investment">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Eyethu Private Investment</h3>
-          <p class="text-gray-600">Exclusive private investment opportunities tailored for long-term wealth growth.</p>
+          <p class="text-gray-700">Exclusive private opportunities tailored for long-term wealth growth.</p>
         </div>
       </div>
 
@@ -109,7 +108,7 @@
         <img src="assets/images/funeral-cover-card.jpg" alt="Funeral Cover">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Funeral Cover</h3>
-          <p class="text-gray-600">Affordable and reliable funeral coverage to protect your loved ones during difficult times.</p>
+          <p class="text-gray-700">Affordable and reliable coverage to protect your loved ones during difficult times.</p>
         </div>
       </div>
 
@@ -118,7 +117,7 @@
         <img src="assets/images/premium-funeral-card.jpg" alt="Premium Funeral Cover">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Premium Funeral Cover</h3>
-          <p class="text-gray-600">Premium benefits and coverage for complete peace of mind.</p>
+          <p class="text-gray-700">Premium benefits and coverage for complete peace of mind.</p>
         </div>
       </div>
 
@@ -127,7 +126,7 @@
         <img src="assets/images/legal-services-card.jpg" alt="Legal Services">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Legal Services</h3>
-          <p class="text-gray-600">Expert legal advice and representation to safeguard your rights and interests.</p>
+          <p class="text-gray-700">Expert legal advice and representation to safeguard your rights and interests.</p>
         </div>
       </div>
 
@@ -136,7 +135,7 @@
         <img src="assets/images/health-card.jpg" alt="Health Services">
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-3 text-[#0D1B2A]">Health</h3>
-          <p class="text-gray-600">Comprehensive health solutions to protect your well-being and that of your family.</p>
+          <p class="text-gray-700">Comprehensive health solutions for you and your family's well-being.</p>
         </div>
       </div>
 
@@ -144,15 +143,15 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-20 px-8 bg-gray-50">
+  <section id="about" class="py-20 px-6 bg-gray-50">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
       <div class="md:w-1/2">
         <img src="assets/images/financial-consulting.jpg" alt="Financial consulting" class="rounded-xl shadow-lg"/>
       </div>
       <div class="md:w-1/2 space-y-6">
-        <h2 class="text-3xl font-bold text-[#0D1B2A]">About Essential Financial Solutions</h2>
-        <p class="text-gray-600 text-lg">
-          We are dedicated to providing trusted and personalized financial services. Our priority is to help clients achieve their goals — with Edu Investment at the forefront of our mission, alongside our insurance, legal, and health services.
+        <h2 class="text-3xl font-extrabold text-[#0D1B2A]">About Essential Financial Solutions</h2>
+        <p class="lead">
+          We provide trusted and personalized financial services. Our priority is to help clients achieve their goals, with Edu Investment at the forefront, alongside our insurance, legal, and health services.
         </p>
         <a href="#contact" class="btn-primary inline-block px-6 py-3 rounded-lg shadow">Contact Us</a>
       </div>
@@ -160,8 +159,8 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 px-8 max-w-3xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12 text-[#0D1B2A]">Get In Touch</h2>
+  <section id="contact" class="py-20 px-6 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-12 text-[#0D1B2A]">Get In Touch</h2>
     <form onsubmit="sendToWhatsApp(event)" class="bg-white shadow-lg rounded-xl p-8 space-y-6 border border-gray-200">
       <div>
         <label class="block mb-2 font-semibold">Name</label>
@@ -176,7 +175,7 @@
         <input type="tel" id="phone" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" placeholder="Your Phone Number" required/>
       </div>
       <div>
-        <label class="block mb-2 font-semibold">Subject</label>
+        <label class="block mb-2 font-semibold">Service</label>
         <select id="subject" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#C1272D]" required>
           <option value="">Select a service</option>
           <option value="Edu Investment">Edu Investment</option>
@@ -197,9 +196,31 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#0D1B2A] text-white py-6">
-    <div class="max-w-7xl mx-auto text-center">
-      &copy; 2025 Essential Financial Solutions. All Rights Reserved.
+  <footer class="brand-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon.png" alt="EFS icon" class="w-8 h-8">
+          <span class="font-bold">Essential Financial Solutions</span>
+        </div>
+        <p class="text-sm text-gray-300 mt-3">Secure futures. Build legacies. Grow with confidence.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Services</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#services" class="hover:text-white">All Services</a></li>
+          <li><a href="investment.html" class="hover:text-white">Investments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Connect</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <p class="text-center text-sm text-gray-300 py-4">© 2025 Essential Financial Solutions. All rights reserved.</p>
     </div>
   </footer>
 
@@ -211,7 +232,7 @@
       const phone = document.getElementById('phone').value;
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
-      const whatsappNumber = '27732067477'; // Without '+' and spaces
+      const whatsappNumber = '27732067477';
       const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${subject}\nMessage: ${message}`
       )}`;
@@ -221,11 +242,4 @@
 
 </body>
 </html>
-  </style>
-</head>
-<body class="text-gray-800">
 
-
-
-</body>
-</html>
