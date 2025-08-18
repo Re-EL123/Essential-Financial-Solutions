@@ -1,125 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Legal Services - Essential Financial Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Legal Services — Essential Financial Solutions</title>
+  <meta name="description" content="Explore Essential Financial Solutions legal services: professional lawyers, family, labour, and civil cases with reliable cover from R70 per month."/>
+  <link rel="icon" href="assets/images/icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1f2937; }
+    .brand-navy { background-color: #0D1B2A; }
+    .brand-red { color: #C1272D; }
+    .btn-primary {
+      background-color: #C1272D; color: #fff; transition: all .25s ease;
+    }
+    .btn-primary:hover { background-color: #a32025; }
+    .glassy {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .section-card {
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .section-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+    .lead { font-size: 1.125rem; line-height: 1.7; color: #4b5563; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white py-6 shadow-md">
-    <div class="container mx-auto px-6 text-center">
-      <h1 class="text-3xl font-bold">Essential Financial Solutions</h1>
-      <p class="text-lg mt-2">Professional Legal Services for You and Your Family</p>
+  <!-- Header / Nav -->
+  <header class="relative w-full brand-navy text-white">
+    <div class="absolute inset-0">
+      <img src="assets/images/header.png" alt="Legal services background" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <nav class="relative z-10 max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="EFS logo" class="w-10 h-10 object-contain">
+        <a href="index.html" class="text-xl md:text-2xl font-extrabold brand-red">Essential Financial Solutions</a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="index.html#services" class="hover:text-gray-200">Services</a>
+        <a href="investment.html" class="hover:text-gray-200">Investments</a>
+        <a href="legal.html" class="hover:text-gray-200 underline underline-offset-4">Legal</a>
+        <a href="index.html#about" class="hover:text-gray-200">About</a>
+        <a href="index.html#contact" class="hover:text-gray-200">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative z-10 max-w-5xl mx-auto px-6 pt-10 pb-20 text-center">
+      <div class="glassy mx-auto p-8 md:p-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Professional Legal Services</h1>
+        <p class="lead mb-8">
+          Take a stand that gets legal matters solved. Know your rights, act upon them, and secure your family’s peace of mind with Essential Financial Solutions Legal Cover.
+        </p>
+        <a href="#benefits" class="btn-primary inline-block px-8 py-4 rounded-lg shadow">Explore Benefits</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-cover bg-center py-20" style="background-image: url('assets/legal_cover.jpg');">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="relative container mx-auto px-6 text-center text-white">
-      <h2 class="text-4xl font-bold mb-4">Legal Services You Can Trust</h2>
-      <p class="text-lg max-w-3xl mx-auto">
-        Take a stand that gets legal matters solved under Essential Financial Solutions. 
-        Know your rights and act upon them with the support of our professional legal team. 
-      </p>
-      <p class="mt-4 text-xl font-semibold">Legal cover starts from <span class="text-yellow-400">R70 per month</span>.</p>
+  <!-- Intro -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-10 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Why Legal Cover Matters</h2>
+      <p class="mt-3 lead">Legal matters in South Africa are escalating — Essential Financial Solutions provides clear, reliable, and affordable solutions to protect you and your family.</p>
     </div>
-  </section>
 
-  <!-- Intro Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <img src="assets/legal_team.jpg" alt="Legal Team" class="rounded-xl shadow-lg">
+    <div class="section-card grid grid-cols-1 lg:grid-cols-2">
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-bold text-[#0D1B2A] mb-4">Cover Starts from Just R70 per Month</h3>
+        <p class="lead">
+          With Essential Financial Solutions legal cover, you’ll have access to professional lawyers and advisors who are here to guide you through labour disputes, family matters, civil cases, and more. 
+          The naked truth: all matters must be drawn in legal form to get to a positive conclusion — and we’re here to get you there.
+        </p>
       </div>
-      <div>
-        <h3 class="text-2xl font-bold mb-4">Clear & Reliable Legal Support</h3>
-        <p class="mb-4">
-          Legal matters in South Africa are escalating, and many families are left without proper 
-          guidance. Essential Financial Solutions provides <span class="font-semibold">clear, reliable, 
-          and affordable legal services</span> to help you overcome challenges.  
-        </p>
-        <p>
-          From family disputes to labour issues and civil matters, we ensure that your case is handled 
-          by a professional lawyer who is committed to achieving the best possible outcome.
-        </p>
+      <div class="min-h-[260px]">
+        <img src="assets/images/legal-cover.jpg" alt="Legal support" class="w-full h-full object-cover">
       </div>
     </div>
   </section>
 
-  <!-- Legal Philosophy Section -->
-  <section class="py-16 bg-gray-100">
-    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h3 class="text-2xl font-bold mb-4">Our Legal Philosophy</h3>
-        <p class="mb-4">
-          The naked truth is that all matters must be drawn in a legal form to reach a positive conclusion.  
-          Going through the law is the <span class="font-semibold">first step</span>, and at Essential Financial Solutions, 
-          it is our duty to ensure every client gets to a <span class="font-semibold">legitimate and fair conclusion</span>.
-        </p>
-        <p>
-          Our professional lawyers are here to provide solutions to the legal issues facing you 
-          and your family, ensuring peace of mind through every stage of the process.
-        </p>
-      </div>
-      <div>
-        <img src="assets/legal_judge.jpg" alt="Law and Justice" class="rounded-xl shadow-lg">
-      </div>
+  <!-- Benefits -->
+  <section id="benefits" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#0D1B2A]">Benefits of Our Legal Services</h2>
+      <p class="mt-3 lead">A platform of expertise, innovative solutions, and round-the-clock legal assistance.</p>
     </div>
-  </section>
 
-  <!-- Benefits Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-10">Benefits of Our Legal Cover</h3>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-xl mb-3">Professional Legal Advice</h4>
-          <p>Access innovative legal problem-solving techniques and consult with a professional advisor anytime for proper assistance.</p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div class="section-card">
+        <img src="assets/images/lawyer-consultation.jpg" alt="Consult a lawyer" class="w-full h-56 object-cover">
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-[#0D1B2A] mb-3">Comprehensive Legal Support</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li>• Consult with professional advisors at any time.</li>
+            <li>• Bail covered at an amount of up to <strong>R3800</strong>.</li>
+            <li>• Labour-related matters resolved with expert guidance.</li>
+            <li>• Full support in civil cases and family-related issues.</li>
+          </ul>
         </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-xl mb-3">Bail Cover</h4>
-          <p>We provide bail paid on your behalf at an amount of up to <span class="font-semibold">R3800</span>.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-xl mb-3">Labour Matters</h4>
-          <p>From unfair dismissals to workplace disputes, we ensure you have strong representation in all labour-related issues.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-xl mb-3">Civil Cases</h4>
-          <p>We take care of civil disputes to protect your rights and interests in everyday situations.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-xl mb-3">Family Matters</h4>
-          <p>From divorce and custody to inheritance disputes, we are here to ensure your loved ones are protected legally.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg">
-          <h4 class="font-bold text-xl mb-3">24/7 Access</h4>
-          <p>Contact your professional lawyer anytime for urgent legal guidance and immediate support.</p>
+      </div>
+
+      <div class="section-card">
+        <img src="assets/images/family-law.jpg" alt="Family legal support" class="w-full h-56 object-cover">
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-[#0D1B2A] mb-3">Peace of Mind</h3>
+          <p class="lead mb-6">Our professional lawyers are dedicated to protecting you and your loved ones with clarity, compassion, and legal expertise. Get the cover you deserve today.</p>
+          <a href="index.html#contact" class="btn-primary inline-block px-6 py-3 rounded-lg shadow">Get Legal Cover</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="py-16 bg-blue-900 text-white text-center">
-    <h3 class="text-3xl font-bold mb-4">Get Legal Cover Today</h3>
-    <p class="mb-6 max-w-2xl mx-auto">
-      Protect yourself and your family from unexpected legal battles. With plans starting from 
-      just <span class="text-yellow-400 font-semibold">R70 per month</span>, you can secure reliable legal services today.
-    </p>
-    <a href="contact.html" class="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">
-      Apply Now
-    </a>
+  <section class="max-w-7xl mx-auto px-6 pb-16">
+    <div class="section-card grid grid-cols-1 md:grid-cols-2">
+      <div class="min-h-[240px]">
+        <img src="assets/images/legal-team.jpg" alt="Our legal team" class="w-full h-full object-cover">
+      </div>
+      <div class="p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-[#0D1B2A] mb-3">Your Legal Partner for Life</h3>
+        <p class="lead mb-6">Let Essential Financial Solutions handle your legal battles, so you can focus on what truly matters. Secure affordable, reliable legal cover today.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="index.html#contact" class="btn-primary px-6 py-3 rounded-lg shadow">Contact Us</a>
+          <a href="index.html" class="px-6 py-3 rounded-lg border border-gray-300 hover:bg-gray-50">Back to Home</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-8">
-    <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2025 Essential Financial Solutions. All rights reserved.</p>
+  <footer class="brand-navy text-white">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon.png" alt="EFS icon" class="w-8 h-8">
+          <span class="font-bold">Essential Financial Solutions</span>
+        </div>
+        <p class="text-sm text-gray-300 mt-3">Secure futures. Build legacies. Grow with confidence.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Services</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="investment.html" class="hover:text-white">Investments</a></li>
+          <li><a href="legal.html" class="hover:text-white">Legal Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-2">Connect</h4>
+        <ul class="space-y-1 text-gray-300">
+          <li><a href="index.html#contact" class="hover:text-white">Contact</a></li>
+          <li><a href="index.html#services" class="hover:text-white">All Services</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <p class="text-center text-sm text-gray-300 py-4">© 2025 Essential Financial Solutions. All rights reserved.</p>
     </div>
   </footer>
 
